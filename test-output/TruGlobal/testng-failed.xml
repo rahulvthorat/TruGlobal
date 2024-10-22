@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [TruGlobal]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.amazon.utils.SuiteListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.amazon.tests.ProductSearchByString">
+        <methods>
+          <include name="loadconfig"/>
+          <include name="afterMethod"/>
+          <include name="searchAndAddToCart"/>
+          <include name="initialization"/>
+          <include name="beforMethod"/>
+          <include name="extentReport"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.amazon.tests.ProductSearchByString -->
+      <class name="com.amazon.tests.ProductSearchAndApplyFilters">
+        <methods>
+          <include name="searchAndApplyFilter"/>
+          <include name="loadconfig"/>
+          <include name="afterMethod"/>
+          <include name="initialization"/>
+          <include name="extentReport"/>
+          <include name="beforMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.amazon.tests.ProductSearchAndApplyFilters -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TruGlobal] -->
